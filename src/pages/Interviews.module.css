@@ -1,0 +1,348 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.contentGrid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.calendarColumn {
+  flex: 1;
+}
+
+.formColumn {
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.calendarCard {
+  padding: 24px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.calendarHeader h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.calendarNav {
+  display: flex;
+  gap: 8px;
+}
+
+.weekGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.dayColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.dayColumn:hover {
+  background-color: var(--color-bg-main);
+}
+
+.selectedDay {
+  background-color: var(--color-primary-light) !important;
+  border-color: var(--color-primary);
+}
+
+.dayName {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.dayNumber {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.todayNumber {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.dayDot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.scheduleTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.interviewCard {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-main);
+  transition: box-shadow var(--transition-fast);
+}
+
+.interviewCard:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-primary-light);
+}
+
+.interviewTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.interviewTime strong {
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.interviewTime span {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.interviewDivider {
+  width: 2px;
+  background-color: var(--color-border);
+  border-radius: 1px;
+}
+
+.interviewDetails {
+  flex: 1;
+}
+
+.interviewHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.interviewHeaderRow h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.interviewDetails p {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.interviewMeta {
+  display: flex;
+  gap: 12px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg-card);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.emptyState {
+  padding: 40px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* Form Styles */
+.formCard {
+  padding: 24px;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.formHeader h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.inviteForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.formGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+}
+
+.inputWrapper input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px 0 36px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+}
+
+.basicInput {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+}
+
+.inputWrapper input:focus, .basicInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.formRow {
+  display: flex;
+  gap: 16px;
+}
+
+.suggestedSlots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.slotTag {
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  background: var(--gradient-glass);
+  border: 1px solid var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.slotTag:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.submitBtn {
+  margin-top: 16px;
+}
+
+.successState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+.successState h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.successState p {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  .contentGrid {
+    flex-direction: column;
+  }
+  .formColumn {
+    width: 100%;
+  }
+}
