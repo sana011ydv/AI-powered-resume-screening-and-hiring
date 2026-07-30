@@ -144,6 +144,8 @@ Add screenshots here:
 - Candidate Evaluation-<img width="1916" height="962" alt="image" src="https://github.com/user-attachments/assets/4d554cab-ba82-4e10-8c3d-bcae79cdf31d" />
 
 - Interview Scheduling-<img width="1915" height="967" alt="image" src="https://github.com/user-attachments/assets/179712fa-1acf-410a-a96d-ca1ecfaae5e2" />
+- output mail- <img width="694" height="1280" alt="output mail screenshort" src="https://github.com/user-attachments/assets/48f8f229-4f8d-4149-b30f-3fb35e20a23b" />
+
 
 - n8n Workflow-<img width="1865" height="980" alt="n8n workflow screenshort" src="https://github.com/user-attachments/assets/ecd191cc-6f3a-436c-a544-df8a92e9735b" />
   THE N8N WORKFLOW FILE NAMED -REsume screening json.
